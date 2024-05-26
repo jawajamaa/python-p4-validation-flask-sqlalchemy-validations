@@ -14,3 +14,7 @@ class EmailAddress(db.Model):
         if '@' not in address:
             raise ValueError("Failed simple email validation")
         return address
+
+# email = EmailAddress(email="banana")
+# db.session.add(email)
+# above email address returns the ValueError from line 15
